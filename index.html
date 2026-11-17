@@ -1,0 +1,2297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TŪLA STUDIOS Dubai | Pilates, Yoga, Barre & Wellness</title>
+  <meta name="description" content="Discover TŪLA STUDIOS in Dubai. Explore Reformer Pilates, Lagree, Yoga, Barre, mindful movement and private recovery experiences. Find your balance.">
+  <meta name="theme-color" content="#111111">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tulastudios.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="TŪLA STUDIOS — The Art of Balance">
+  <meta property="og:description" content="Movement, strength, mindfulness and recovery. Find your balance with TŪLA STUDIOS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tulastudios.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=85">
+
+  <style>
+    :root {
+      --color-primary: #111111;
+      --color-primary-dark: #080808;
+      --color-primary-light: #383838;
+
+      --color-secondary: #FFFFFF;
+      --color-secondary-dark: #E9E7E3;
+      --color-secondary-light: #FFFFFF;
+
+      --color-accent: #B6A99A;
+
+      --color-heading: #111111;
+      --color-text: #333333;
+      --color-muted: #696969;
+
+      --color-background: #FFFFFF;
+      --color-background-alt: #F4F2EE;
+
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #EBE8E2;
+
+      --color-border: #E5E2DD;
+      --color-border-strong: #B9B5AE;
+
+      --color-interactive: #111111;
+      --color-hover: #383838;
+      --color-focus: #8A7661;
+
+      --font-heading: "Instrument Serif", Georgia, serif;
+      --font-body: "DM Sans", Arial, sans-serif;
+
+      --container: 1300px;
+      --page-pad: 30px;
+
+      --section-space: 112px;
+
+      --radius-small: 4px;
+      --radius-large: 18px;
+
+      --shadow-soft: 0 20px 60px rgba(0,0,0,.08);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--color-text);
+      background: var(--color-background);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 2 * var(--page-pad)));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-space);
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 22px;
+      color: var(--color-muted);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--color-accent);
+    }
+
+    h1, h2, h3, h4, p {
+      margin-top: 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--color-heading);
+    }
+
+    h1, h2 {
+      font-family: var(--font-heading);
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: clamp(52px, 7.2vw, 100px);
+      line-height: .98;
+      letter-spacing: -.035em;
+    }
+
+    h2 {
+      font-size: clamp(42px, 5.2vw, 68px);
+      line-height: 1.04;
+      letter-spacing: -.025em;
+    }
+
+    h3 {
+      font-size: clamp(23px, 2.5vw, 30px);
+      line-height: 1.2;
+      font-weight: 500;
+    }
+
+    .italic {
+      font-style: italic;
+      color: var(--color-accent);
+    }
+
+    .lead {
+      max-width: 620px;
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--color-muted);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      min-height: 54px;
+      padding: 14px 26px;
+      border: 1px solid var(--color-primary);
+      background: var(--color-primary);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background .25s ease, color .25s ease, transform .25s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: var(--color-primary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      border-color: white;
+      color: var(--color-primary);
+    }
+
+    .btn-light:hover {
+      background: var(--color-secondary-dark);
+      color: var(--color-primary);
+    }
+
+    .arrow {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    /* NAVIGATION */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,.07);
+    }
+
+    .nav-wrap {
+      min-height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      color: var(--color-primary);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-size: 37px;
+      letter-spacing: .08em;
+    }
+
+    .brand-caption {
+      margin-top: 7px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .3em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 3vw, 40px);
+    }
+
+    .nav-links a {
+      position: relative;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-text);
+    }
+
+    .nav-links a:not(.nav-book)::after {
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      content: "";
+      height: 1px;
+      width: 0;
+      background: var(--color-primary);
+      transition: width .25s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-book {
+      padding: 13px 21px;
+      background: var(--color-primary);
+      color: white !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--color-border);
+      background: white;
+      cursor: pointer;
+      color: var(--color-primary);
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin: 5px auto;
+      background: currentColor;
+      transition: transform .25s ease;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 690px;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--color-background-alt);
+      overflow: hidden;
+    }
+
+    .hero-copy {
+      align-self: center;
+      padding: 100px 35px 110px max(30px, calc((100vw - var(--container))/2));
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      max-width: 690px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 span {
+      display: block;
+    }
+
+    .hero-description {
+      max-width: 510px;
+      margin-bottom: 34px;
+      font-size: 18px;
+      color: var(--color-muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .hero-note {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--color-muted);
+      font-size: 15px;
+    }
+
+    .hero-note::before {
+      content: "";
+      height: 1px;
+      width: 40px;
+      background: var(--color-accent);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 690px;
+      background: #c9c3bb;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-position: center;
+      filter: saturate(.55);
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 65%, rgba(0,0,0,.4));
+    }
+
+    .hero-stamp {
+      position: absolute;
+      z-index: 2;
+      top: 44px;
+      right: 40px;
+      width: 122px;
+      height: 122px;
+      border: 1px solid rgba(255,255,255,.8);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: .12em;
+      line-height: 1.45;
+    }
+
+    .hero-caption {
+      position: absolute;
+      bottom: 35px;
+      left: 35px;
+      z-index: 2;
+      color: white;
+      font-size: 15px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .hero-index {
+      position: absolute;
+      left: 20px;
+      bottom: 35px;
+      color: rgba(255,255,255,.8);
+      z-index: 3;
+      font-size: 15px;
+    }
+
+    /* INTRO STRIP */
+
+    .intro-strip {
+      background: var(--color-primary);
+      color: white;
+      padding: 27px 0;
+      overflow: hidden;
+    }
+
+    .strip-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .strip-inner span {
+      color: rgba(255,255,255,.8);
+      font-size: 15px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .strip-dot {
+      color: var(--color-accent) !important;
+      font-size: 22px !important;
+    }
+
+    /* PHILOSOPHY */
+
+    .philosophy {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 100px;
+      align-items: center;
+    }
+
+    .philosophy-visual {
+      min-height: 550px;
+      position: relative;
+      background: #d8d3cb;
+    }
+
+    .philosophy-visual img {
+      height: 550px;
+      filter: saturate(.5);
+    }
+
+    .philosophy-mark {
+      position: absolute;
+      right: -30px;
+      bottom: 45px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-family: var(--font-heading);
+      font-size: 49px;
+    }
+
+    .philosophy-copy h2 {
+      max-width: 550px;
+      margin-bottom: 28px;
+    }
+
+    .philosophy-copy p {
+      max-width: 530px;
+      color: var(--color-muted);
+      margin-bottom: 30px;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--color-primary);
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .text-link:hover {
+      color: var(--color-focus);
+    }
+
+    /* SERVICES */
+
+    .services-section {
+      background: var(--color-background-alt);
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 35px;
+      margin-bottom: 65px;
+    }
+
+    .section-heading h2 {
+      max-width: 680px;
+      margin-bottom: 0;
+    }
+
+    .section-heading .lead {
+      max-width: 390px;
+      margin-bottom: 4px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 20px;
+    }
+
+    .service {
+      min-height: 380px;
+      padding: 36px 28px;
+      position: relative;
+      background: white;
+      border-top: 2px solid var(--color-primary);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .service-number {
+      position: absolute;
+      top: 25px;
+      right: 27px;
+      font-family: var(--font-heading);
+      font-size: 34px;
+      color: #B6A99A;
+    }
+
+    .service-icon {
+      width: 74px;
+      height: 74px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 45px;
+      background: var(--color-background-alt);
+      color: var(--color-primary);
+    }
+
+    .service-icon svg {
+      width: 48px;
+      height: 48px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.35;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service h3 {
+      margin-bottom: 14px;
+    }
+
+    .service p {
+      color: var(--color-muted);
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .service-link {
+      display: inline-flex;
+      gap: 9px;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--color-border-strong);
+      padding-bottom: 5px;
+    }
+
+    /* MOVEMENT EXPERIENCE */
+
+    .experience {
+      background: var(--color-primary);
+      color: white;
+      overflow: hidden;
+    }
+
+    .experience .eyebrow {
+      color: #C5B8A8;
+    }
+
+    .experience h2 {
+      color: white;
+      max-width: 730px;
+    }
+
+    .experience .lead {
+      color: rgba(255,255,255,.7);
+    }
+
+    .experience-layout {
+      display: grid;
+      grid-template-columns: 1fr .85fr;
+      gap: 80px;
+      align-items: center;
+      margin-top: 55px;
+    }
+
+    .experience-image {
+      height: 590px;
+      position: relative;
+      overflow: hidden;
+      background: #655f58;
+    }
+
+    .experience-image img {
+      height: 100%;
+      filter: grayscale(.65);
+    }
+
+    .experience-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg,transparent 65%,rgba(0,0,0,.4));
+    }
+
+    .experience-quote {
+      position: absolute;
+      z-index: 2;
+      left: 30px;
+      bottom: 26px;
+      color: white;
+      font-family: var(--font-heading);
+      font-size: 36px;
+      line-height: 1.1;
+    }
+
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .experience-item {
+      padding: 23px 0;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+    }
+
+    .experience-item:first-child {
+      border-top: 1px solid rgba(255,255,255,.22);
+    }
+
+    .experience-item h3 {
+      color: white;
+      margin-bottom: 7px;
+      font-family: var(--font-heading);
+      font-size: 31px;
+      font-weight: 400;
+    }
+
+    .experience-item p {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255,255,255,.7);
+    }
+
+    /* FIRST VISIT */
+
+    .first-visit {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .first-visit-copy h2 {
+      margin-bottom: 24px;
+    }
+
+    .first-visit-copy p {
+      color: var(--color-muted);
+    }
+
+    .trial-price {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 27px 0;
+    }
+
+    .trial-price strong {
+      font-family: var(--font-heading);
+      font-size: 64px;
+      font-weight: 400;
+      color: var(--color-primary);
+    }
+
+    .trial-price span {
+      color: var(--color-muted);
+      font-size: 16px;
+    }
+
+    .trial-note {
+      padding: 20px;
+      margin-bottom: 27px;
+      background: var(--color-background-alt);
+      border-left: 2px solid var(--color-accent);
+      font-size: 16px;
+    }
+
+    .first-visit-image {
+      height: 560px;
+      background: #c9c4bd;
+      overflow: hidden;
+    }
+
+    .first-visit-image img {
+      height: 100%;
+      filter: saturate(.55);
+    }
+
+    /* PROCESS */
+
+    .journey {
+      background: var(--color-background-alt);
+    }
+
+    .journey-header {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 70px;
+    }
+
+    .journey-header .eyebrow {
+      justify-content: center;
+    }
+
+    .journey-header h2 {
+      margin-bottom: 20px;
+    }
+
+    .journey-steps {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 45px;
+      position: relative;
+    }
+
+    .journey-step {
+      padding-top: 30px;
+      border-top: 1px solid var(--color-border-strong);
+      position: relative;
+    }
+
+    .journey-step span {
+      font-family: var(--font-heading);
+      font-size: 50px;
+      color: var(--color-accent);
+    }
+
+    .journey-step h3 {
+      margin: 15px 0 12px;
+    }
+
+    .journey-step p {
+      color: var(--color-muted);
+      font-size: 16px;
+    }
+
+    /* LOCATIONS */
+
+    .locations {
+      background: white;
+    }
+
+    .location-heading {
+      max-width: 720px;
+      margin-bottom: 60px;
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 0 55px;
+    }
+
+    .location-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 29px 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .location-item h3 {
+      font-family: var(--font-heading);
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .location-item p {
+      margin: 0;
+      color: var(--color-muted);
+      font-size: 16px;
+    }
+
+    .location-item a {
+      flex-shrink: 0;
+      font-size: 15px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--color-primary);
+      padding-bottom: 5px;
+    }
+
+    .location-note {
+      margin-top: 32px;
+      padding: 25px;
+      background: var(--color-background-alt);
+      color: var(--color-muted);
+      font-size: 16px;
+    }
+
+    /* RECOVERY FEATURE */
+
+    .recovery {
+      background: #EAE6DF;
+    }
+
+    .recovery-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .recovery-image {
+      min-height: 570px;
+      background: #b8b0a6;
+      overflow: hidden;
+    }
+
+    .recovery-image img {
+      height: 570px;
+      filter: saturate(.45);
+    }
+
+    .recovery-copy h2 {
+      margin-bottom: 25px;
+    }
+
+    .recovery-copy p {
+      color: var(--color-muted);
+    }
+
+    .recovery-list {
+      list-style: none;
+      margin: 28px 0 32px;
+      padding: 0;
+    }
+
+    .recovery-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(0,0,0,.13);
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-size: 16px;
+    }
+
+    .recovery-list li::before {
+      content: "✳";
+      color: #8A7661;
+      font-size: 19px;
+    }
+
+    /* FAQ */
+
+    .faq-section {
+      background: white;
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 85px;
+    }
+
+    .faq-intro h2 {
+      margin-bottom: 23px;
+    }
+
+    .faq-intro p {
+      color: var(--color-muted);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 23px 0;
+      background: transparent;
+      border: 0;
+      text-align: left;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--color-primary);
+    }
+
+    .faq-question span:last-child {
+      font-size: 23px;
+      font-weight: 400;
+      transition: transform .25s ease;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 35px 22px 0;
+      color: var(--color-muted);
+      font-size: 16px;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question span:last-child {
+      transform: rotate(45deg);
+    }
+
+    /* CTA */
+
+    .final-cta {
+      padding: 100px 20px;
+      background: var(--color-primary);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta h2 {
+      color: white;
+      max-width: 850px;
+      margin: 0 auto 22px;
+    }
+
+    .final-cta p {
+      max-width: 580px;
+      margin: 0 auto 32px;
+      color: rgba(255,255,255,.7);
+    }
+
+    .final-cta .eyebrow {
+      justify-content: center;
+      color: #C5B8A8;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      background: #080808;
+      color: white;
+      padding: 75px 0 35px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr .8fr;
+      gap: 70px;
+      padding-bottom: 65px;
+    }
+
+    .footer .brand {
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    .footer p {
+      max-width: 370px;
+      color: rgba(255,255,255,.6);
+      font-size: 16px;
+    }
+
+    .footer h4 {
+      color: white;
+      font-size: 16px;
+      letter-spacing: .06em;
+      margin-bottom: 22px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.7);
+      font-size: 16px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,.15);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.55);
+      font-size: 15px;
+    }
+
+    /* MOBILE CONVERSION BAR */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* ANIMATION */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* TABLET */
+
+    @media (max-width: 1000px) {
+      :root {
+        --section-space: 82px;
+        --page-pad: 24px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      .hero {
+        min-height: 590px;
+      }
+
+      .hero-copy {
+        padding: 80px 20px 80px 30px;
+      }
+
+      .hero-visual {
+        min-height: 590px;
+      }
+
+      .philosophy,
+      .recovery-layout {
+        gap: 50px;
+      }
+
+      .experience-layout {
+        gap: 45px;
+      }
+
+      .faq-layout {
+        gap: 45px;
+      }
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+      :root {
+        --section-space: 65px;
+        --page-pad: 17px;
+      }
+
+      body {
+        font-size: 16px;
+        padding-bottom: calc(82px + env(safe-area-inset-bottom));
+      }
+
+      .nav-wrap {
+        min-height: 72px;
+      }
+
+      .brand-name {
+        font-size: 32px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        height: calc(100dvh - 72px);
+        padding: 40px 25px;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 19px 0;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 18px;
+      }
+
+      .nav-links .nav-book {
+        margin-top: 25px;
+        text-align: center;
+        padding: 16px;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-copy {
+        padding: 75px 22px 55px;
+      }
+
+      h1 {
+        font-size: clamp(48px, 13vw, 68px);
+      }
+
+      h2 {
+        font-size: clamp(39px, 10vw, 51px);
+      }
+
+      .hero-description {
+        font-size: 17px;
+      }
+
+      .hero-visual {
+        min-height: 440px;
+        height: 440px;
+      }
+
+      .hero-stamp {
+        width: 100px;
+        height: 100px;
+        right: 20px;
+        top: 20px;
+      }
+
+      .hero-caption {
+        left: 20px;
+        bottom: 22px;
+      }
+
+      .strip-inner {
+        justify-content: center;
+        gap: 10px 17px;
+      }
+
+      .strip-inner span {
+        font-size: 15px;
+      }
+
+      .philosophy,
+      .experience-layout,
+      .first-visit,
+      .recovery-layout,
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .philosophy-visual {
+        min-height: 390px;
+      }
+
+      .philosophy-visual img {
+        height: 390px;
+      }
+
+      .philosophy-mark {
+        width: 95px;
+        height: 95px;
+        right: -8px;
+        font-size: 37px;
+      }
+
+      .section-heading {
+        display: block;
+        margin-bottom: 38px;
+      }
+
+      .section-heading .lead {
+        margin-top: 20px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .service {
+        min-height: 0;
+        padding: 28px 24px;
+      }
+
+      .service-icon {
+        margin-bottom: 28px;
+      }
+
+      .experience-layout {
+        margin-top: 30px;
+      }
+
+      .experience-image {
+        height: 400px;
+      }
+
+      .experience-quote {
+        font-size: 30px;
+      }
+
+      .first-visit-image {
+        height: 420px;
+        order: -1;
+      }
+
+      .journey-header {
+        margin-bottom: 42px;
+      }
+
+      .journey-steps {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .journey-step {
+        padding-top: 20px;
+      }
+
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location-item {
+        padding: 23px 0;
+      }
+
+      .location-item h3 {
+        font-size: 26px;
+      }
+
+      .recovery-image,
+      .recovery-image img {
+        min-height: 390px;
+        height: 390px;
+      }
+
+      .faq-layout {
+        gap: 28px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 20px;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: 1 / -1;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom span {
+        display: block;
+        margin-top: 9px;
+      }
+
+      .final-cta {
+        padding: 75px 20px;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 200;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 11px 14px calc(11px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97);
+        border-top: 1px solid var(--color-border);
+        box-shadow: 0 -8px 30px rgba(0,0,0,.08);
+      }
+
+      .mobile-cta a {
+        min-height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 11px 8px;
+        background: var(--color-primary);
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .mobile-cta a:last-child {
+        background: white;
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: auto;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "TŪLA STUDIOS",
+    "url": "https://tulastudios.com/",
+    "email": "info@tulastudios.com",
+    "telephone": "+971554740012",
+    "description": "Dubai movement and wellness studios offering Pilates, Lagree, yoga, barre and recovery experiences.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "The Springs Souk, Level 1",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "sameAs": [
+      "https://www.instagram.com/tula.studios/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a href="#home" class="brand" aria-label="Tula Studios home">
+        <span class="brand-name">TŪLA</span>
+        <span class="brand-caption">STUDIOS</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mainNav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+        <a href="#philosophy">Our Philosophy</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#locations">Studios</a>
+        <a href="#recovery">Recovery</a>
+        <a href="https://tulastudios.com/pages/our-pricing">Packages</a>
+        <a class="nav-book" href="https://tulastudios.com/pages/our-pricing">Book a Class ↗</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+      <div class="hero-copy">
+        <p class="eyebrow">Movement · Mindfulness · Balance</p>
+
+        <h1>
+          Find your
+          <span>own kind of</span>
+          <span class="italic">balance.</span>
+        </h1>
+
+        <p class="hero-description">
+          From Pilates and mindful movement to recovery and wellness,
+          discover a space where strength, energy and balance come together.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="https://tulastudios.com/pages/our-pricing">
+            Explore Classes <span class="arrow">↗</span>
+          </a>
+
+          <a class="btn btn-outline" href="#locations">
+            Find Your Studio
+          </a>
+        </div>
+
+        <div class="hero-note">
+          A movement and wellness community across Dubai.
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=85"
+          alt="Woman practising a mindful movement and fitness routine"
+          fetchpriority="high">
+
+        <div class="hero-stamp">
+          MOVE<br>WITH<br>INTENTION
+        </div>
+
+        <div class="hero-caption">The art of feeling balanced</div>
+        <span class="hero-index">01 / 04</span>
+      </div>
+
+    </section>
+
+    <!-- BRAND STRIP -->
+
+    <section class="intro-strip" aria-label="Tula experiences">
+      <div class="container strip-inner">
+        <span>Pilates</span>
+        <span class="strip-dot">✳</span>
+        <span>Lagree</span>
+        <span class="strip-dot">✳</span>
+        <span>Yoga</span>
+        <span class="strip-dot">✳</span>
+        <span>Barre</span>
+        <span class="strip-dot">✳</span>
+        <span>Recovery</span>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+
+    <section class="section" id="philosophy">
+      <div class="container philosophy">
+
+        <div class="philosophy-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=85"
+            alt="Mindful yoga and movement practice"
+            loading="lazy">
+          <div class="philosophy-mark" aria-hidden="true">Ū</div>
+        </div>
+
+        <div class="philosophy-copy reveal">
+          <p class="eyebrow">A little about TŪLA</p>
+
+          <h2>
+            Balance isn't a destination.
+            <span class="italic">It's your journey.</span>
+          </h2>
+
+          <p>
+            TŪLA means balance. It is the idea that every person has
+            their own rhythm, their own goals and their own way of
+            discovering wellbeing.
+          </p>
+
+          <p>
+            Through movement, mindfulness and recovery, TŪLA brings
+            different wellness experiences together in one community.
+            Find what moves you, and make it your own.
+          </p>
+
+          <a class="text-link" href="https://tulastudios.com/pages/our-story">
+            Discover Our Story <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SIX CUSTOM ICONS / SERVICES -->
+
+    <section class="section services-section" id="experiences">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Explore your movement</p>
+            <h2>Different ways to <span class="italic">feel good.</span></h2>
+          </div>
+
+          <p class="lead">
+            Whether you want to build strength, find your flow,
+            challenge yourself or slow down, explore the experiences
+            that fit your day.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <!-- CUSTOM SVG ICON 1 -->
+
+          <article class="service reveal">
+            <span class="service-number">01</span>
+
+            <div class="service-icon">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Reformer Pilates icon">
+                <path d="M8 45h48M13 45V28h38v17"/>
+                <path d="M18 28V20h28v8"/>
+                <path d="M23 20l5-7h9l5 7"/>
+                <path d="M19 49v4M45 49v4"/>
+                <path d="M26 34h12M32 28v16"/>
+                <circle cx="16" cy="45" r="2"/>
+                <circle cx="48" cy="45" r="2"/>
+              </svg>
+            </div>
+
+            <h3>Reformer Pilates</h3>
+
+            <p>
+              Controlled, guided movement designed to develop core
+              strength, posture, stability and flexibility.
+            </p>
+
+            <a class="service-link" href="https://tulastudios.com/pages/reformer-pilates">
+              Discover Pilates ↗
+            </a>
+          </article>
+
+          <!-- CUSTOM SVG ICON 2 -->
+
+          <article class="service reveal">
+            <span class="service-number">02</span>
+
+            <div class="service-icon">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Lagree training icon">
+                <path d="M8 46h48M13 42l8-20h22l8 20"/>
+                <path d="M20 22l12-8 12 8"/>
+                <path d="M25 28h14M22 36h20"/>
+                <path d="M15 46v5M49 46v5"/>
+                <path d="M32 18v23"/>
+                <path d="M27 24l5-6 5 6"/>
+              </svg>
+            </div>
+
+            <h3>Lagree & Strength</h3>
+
+            <p>
+              Slow, controlled, strength-focused training that
+              challenges muscular endurance and stability.
+            </p>
+
+            <a class="service-link" href="https://tulastudios.com/pages/tsq-packages">
+              Explore Training ↗
+            </a>
+          </article>
+
+          <!-- CUSTOM SVG ICON 3 -->
+
+          <article class="service reveal">
+            <span class="service-number">03</span>
+
+            <div class="service-icon">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Mat Pilates icon">
+                <path d="M12 48h40"/>
+                <path d="M17 43c4-12 10-18 17-18 6 0 11 4 14 11"/>
+                <path d="M25 22c2-5 7-8 12-7"/>
+                <circle cx="42" cy="16" r="5"/>
+                <path d="M29 34l-7 10M37 31l10 12"/>
+                <path d="M20 52h24"/>
+              </svg>
+            </div>
+
+            <h3>Mat & Chair Pilates</h3>
+
+            <p>
+              Mindful, equipment-free or chair-supported sequences
+              that develop body awareness, strength and control.
+            </p>
+
+            <a class="service-link" href="https://tulastudios.com/pages/mat-core-pilates">
+              Explore Mat Classes ↗
+            </a>
+          </article>
+
+          <!-- CUSTOM SVG ICON 4 -->
+
+          <article class="service reveal">
+            <span class="service-number">04</span>
+
+            <div class="service-icon">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Yoga movement icon">
+                <path d="M32 9c-5 0-8 4-8 8s3 8 8 8 8-3 8-8-3-8-8-8Z"/>
+                <path d="M32 26v13"/>
+                <path d="M32 30L17 39 9 34"/>
+                <path d="M32 30l15 9 8-5"/>
+                <path d="M32 39L21 54"/>
+                <path d="M32 39l11 15"/>
+                <path d="M13 56h38"/>
+              </svg>
+            </div>
+
+            <h3>Yoga & Aerial</h3>
+
+            <p>
+              Explore breath, mindful movement, balance and flexibility
+              through different yoga practices.
+            </p>
+
+            <a class="service-link" href="https://tulastudios.com/pages/faqs">
+              Explore Yoga ↗
+            </a>
+          </article>
+
+          <!-- CUSTOM SVG ICON 5 -->
+
+          <article class="service reveal">
+            <span class="service-number">05</span>
+
+            <div class="service-icon">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Barre movement icon">
+                <path d="M10 14h44"/>
+                <path d="M15 14v39M49 14v39"/>
+                <circle cx="32" cy="19" r="5"/>
+                <path d="M32 24v12"/>
+                <path d="M32 29l-13 6M32 29l13 6"/>
+                <path d="M32 36l-9 15M32 36l13 10"/>
+                <path d="M8 54h48"/>
+              </svg>
+            </div>
+
+            <h3>Barre & Sculpt</h3>
+
+            <p>
+              Ballet-inspired movement combined with Pilates and
+              strength exercises for a dynamic full-body session.
+            </p>
+
+            <a class="service-link" href="https://tulastudios.com/pages/tula-sculpt">
+              Discover Sculpt ↗
+            </a>
+          </article>
+
+          <!-- CUSTOM SVG ICON 6 -->
+
+          <article class="service reveal">
+            <span class="service-number">06</span>
+
+            <div class="service-icon">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Recovery and wellness icon">
+                <path d="M32 8v9M32 47v9M8 32h9M47 32h9"/>
+                <path d="M15 15l6 6M43 43l6 6M49 15l-6 6M21 43l-6 6"/>
+                <circle cx="32" cy="32" r="15"/>
+                <path d="M32 20c-5 6-7 10-7 14a7 7 0 0014 0c0-4-2-8-7-14Z"/>
+              </svg>
+            </div>
+
+            <h3>Wellness & Recovery</h3>
+
+            <p>
+              Make room to reset with deep stretching, sound healing
+              and private recovery experiences.
+            </p>
+
+            <a class="service-link" href="https://tulastudios.com/pages/al-furjan-recovery-pods">
+              Explore Recovery ↗
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MOVEMENT EXPERIENCE -->
+
+    <section class="section experience">
+      <div class="container">
+
+        <div class="reveal">
+          <p class="eyebrow">Find your rhythm</p>
+          <h2>Movement for every <span class="italic">version of you.</span></h2>
+          <p class="lead">
+            From a first introduction to a more challenging practice,
+            discover movement experiences that meet you where you are.
+          </p>
+        </div>
+
+        <div class="experience-layout">
+
+          <div class="experience-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1100&q=85"
+              alt="Fitness and strength training movement"
+              loading="lazy">
+            <div class="experience-quote">
+              Stronger in<br>your own way.
+            </div>
+          </div>
+
+          <div class="experience-list reveal">
+
+            <div class="experience-item">
+              <h3>Build strength</h3>
+              <p>Explore Reformer Pilates, Lagree and strength-focused sessions.</p>
+            </div>
+
+            <div class="experience-item">
+              <h3>Find your flow</h3>
+              <p>Discover Yoga, Mat Pilates, Barre and movement-led experiences.</p>
+            </div>
+
+            <div class="experience-item">
+              <h3>Move with confidence</h3>
+              <p>Start with Reformer Beginners and explore at your own pace.</p>
+            </div>
+
+            <div class="experience-item">
+              <h3>Make space to reset</h3>
+              <p>Complement your routine with stretching, sound healing and recovery.</p>
+            </div>
+
+            <a class="btn btn-light" href="https://tulastudios.com/pages/faqs" style="margin-top:32px;width:fit-content">
+              Find Your Class <span class="arrow">↗</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIRST VISIT -->
+
+    <section class="section">
+      <div class="container first-visit">
+
+        <div class="first-visit-copy reveal">
+          <p class="eyebrow">Your first TŪLA experience</p>
+
+          <h2>New to TŪLA? <span class="italic">Start here.</span></h2>
+
+          <p>
+            Finding your rhythm starts with your first class.
+            TŪLA offers introductory class packages for those
+            who want to experience the studio before choosing
+            a longer-term membership.
+          </p>
+
+          <div class="trial-price">
+            <strong>AED 269</strong>
+            <span>3 trial classes<br>30-day validity</span>
+          </div>
+
+          <div class="trial-note">
+            Prefer a different starting point?
+            A 3 Mat Trial package is also listed at AED 229,
+            and a 5 Trial Classes package at AED 399.
+            Check the official pricing page for current terms.
+          </div>
+
+          <a class="btn" href="https://tulastudios.com/pages/our-pricing">
+            Explore Trial Packages ↗
+          </a>
+        </div>
+
+        <div class="first-visit-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=85"
+            alt="A fitness and movement training environment"
+            loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CUSTOMER JOURNEY -->
+
+    <section class="section journey">
+      <div class="container">
+
+        <div class="journey-header reveal">
+          <p class="eyebrow">Your journey starts here</p>
+          <h2>Three steps. <span class="italic">Your own pace.</span></h2>
+          <p class="lead">
+            Discover a class, find the right studio and make movement
+            part of your routine.
+          </p>
+        </div>
+
+        <div class="journey-steps">
+
+          <article class="journey-step reveal">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>
+              Explore the different class styles and decide what
+              fits your interests and experience level.
+            </p>
+          </article>
+
+          <article class="journey-step reveal">
+            <span>02</span>
+            <h3>Choose</h3>
+            <p>
+              Select a studio, check the timetable and explore
+              introductory packages or membership options.
+            </p>
+          </article>
+
+          <article class="journey-step reveal">
+            <span>03</span>
+            <h3>Book & Move</h3>
+            <p>
+              Use the TŪLA Studios app to reserve your session
+              and manage your bookings.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO LOCATIONS -->
+
+    <section class="section locations" id="locations">
+      <div class="container">
+
+        <div class="location-heading reveal">
+          <p class="eyebrow">Find your nearest TŪLA</p>
+          <h2>Good movement, <span class="italic">closer to home.</span></h2>
+          <p class="lead">
+            Discover TŪLA studio destinations across Dubai.
+            Check the live timetable before travelling, as class
+            availability varies by location.
+          </p>
+        </div>
+
+        <div class="location-grid">
+
+          <article class="location-item reveal">
+            <div>
+              <h3>Springs Souk</h3>
+              <p>Level 1, The Springs Souk<br>Emirates Hills, Dubai</p>
+            </div>
+            <a href="https://tulastudios.com/">Explore ↗</a>
+          </article>
+
+          <article class="location-item reveal">
+            <div>
+              <h3>Town Square</h3>
+              <p>Nshama Town Square<br>Al Yalayis 2, Dubai</p>
+            </div>
+            <a href="https://tulastudios.com/">Explore ↗</a>
+          </article>
+
+          <article class="location-item reveal">
+            <div>
+              <h3>JBR Murjan</h3>
+              <p>Murjan 2<br>Jumeirah Beach Residence, Dubai</p>
+            </div>
+            <a href="https://tulastudios.com/">Explore ↗</a>
+          </article>
+
+          <article class="location-item reveal">
+            <div>
+              <h3>Al Furjan</h3>
+              <p>Al Furjan Centre East<br>Jebel Ali Village, Dubai</p>
+            </div>
+            <a href="https://tulastudios.com/pages/al-furjan-recovery-pods">Explore ↗</a>
+          </article>
+
+        </div>
+
+        <div class="location-note reveal">
+          <strong>More TŪLA destinations:</strong>
+          The current website booking navigation also lists Motor City,
+          Damac Hills 2 and Arabian Ranches 2. Their latest operating
+          status, exact addresses and available classes should be
+          checked through the official booking schedule.
+          <br><br>
+          <a class="text-link" href="https://tulastudios.com/">
+            Check Official Studio Schedule ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RECOVERY -->
+
+    <section class="section recovery" id="recovery">
+      <div class="container recovery-layout">
+
+        <div class="recovery-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=85"
+            alt="A tranquil wellness and relaxation environment"
+            loading="lazy">
+        </div>
+
+        <div class="recovery-copy reveal">
+          <p class="eyebrow">The other side of movement</p>
+
+          <h2>Make time to <span class="italic">recover.</span></h2>
+
+          <p>
+            Wellness is not only about how you move. It is also
+            about creating space to slow down, relax and reset.
+          </p>
+
+          <p>
+            TŪLA Recovery Pods offer private 55-minute sessions
+            with access to a combination of heat, cold and shower
+            experiences.
+          </p>
+
+          <ul class="recovery-list">
+            <li>Private infrared sauna</li>
+            <li>Ice plunge</li>
+            <li>Rain shower therapy</li>
+            <li>Contrast therapy experience</li>
+          </ul>
+
+          <a class="btn" href="https://tulastudios.com/pages/al-furjan-recovery-pods">
+            Discover Recovery Pods ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="section faq-section">
+      <div class="container faq-layout">
+
+        <div class="faq-intro reveal">
+          <p class="eyebrow">A few helpful things</p>
+          <h2>Before you <span class="italic">begin.</span></h2>
+          <p>
+            New to TŪLA or trying a different class?
+            Here are a few useful details before your first visit.
+          </p>
+
+          <a class="text-link" href="https://tulastudios.com/pages/faqs">
+            Visit Full FAQs ↗
+          </a>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can beginners join TŪLA classes?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. TŪLA offers Reformer Beginners classes
+              designed to introduce new clients to the equipment,
+              movement principles and guided practice.
+              Check the timetable for suitable sessions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I book a class?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Class bookings, timetable access and memberships
+              are managed through the official TŪLA Studios app.
+              The timetable varies by location.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need a membership?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              No. TŪLA lists introductory trial packages,
+              class packs and flexible membership options.
+              Explore the official pricing page for current offers.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How long are the classes?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              The official FAQ states that TŪLA classes are
+              55 minutes long, including warm-up, guided practice
+              and cool-down.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What should I bring?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              Grip socks are required for classes.
+              Comfortable activewear and a water bottle are
+              recommended. Check with the studio for any
+              additional class-specific requirements.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+
+    <section class="final-cta">
+      <div class="container reveal">
+        <p class="eyebrow">Your next chapter starts with movement</p>
+
+        <h2>
+          Find your flow.<br>
+          <span class="italic">Find your TŪLA.</span>
+        </h2>
+
+        <p>
+          Discover a class, explore your nearest studio
+          and take the next step towards your own balance.
+        </p>
+
+        <a class="btn btn-light" href="https://tulastudios.com/pages/our-pricing">
+          Explore Classes & Packages ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <a href="#home" class="brand">
+            <span class="brand-name">TŪLA</span>
+            <span class="brand-caption">STUDIOS</span>
+          </a>
+
+          <p>
+            Movement, mindfulness and recovery.
+            Discover your own journey towards balance
+            with TŪLA STUDIOS.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#philosophy">Our Philosophy</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#locations">Our Studios</a>
+            <a href="#recovery">Recovery</a>
+            <a href="https://tulastudios.com/pages/our-pricing">Packages</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Get in touch</h4>
+          <div class="footer-links">
+            <a href="mailto:info@tulastudios.com">info@tulastudios.com</a>
+            <a href="tel:+971554740012">+971 55 474 0012</a>
+            <a href="https://www.instagram.com/tula.studios/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://tulastudios.com/pages/contact">Contact TŪLA ↗</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 TŪLA STUDIOS. All rights reserved.</span>
+        <span>Movement · Mindfulness · Balance</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- EXACTLY TWO MOBILE CTA BUTTONS -->
+
+  <div class="mobile-cta" aria-label="Quick booking actions">
+    <a href="tel:+971554740012">Call TŪLA</a>
+    <a href="https://tulastudios.com/pages/our-pricing">Book a Class</a>
+  </div>
+
+  <script>
+    /* MOBILE NAVIGATION */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    function closeMenu() {
+      mainNav.classList.remove("open");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("open");
+
+      document.body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 760) closeMenu();
+    });
+
+    /* FAQ ACCORDION */
+
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const wasActive = item.classList.contains("active");
+
+        document.querySelectorAll(".faq-item").forEach(other => {
+          other.classList.remove("active");
+          other.querySelector(".faq-question")
+            .setAttribute("aria-expanded", "false");
+        });
+
+        if (!wasActive) {
+          item.classList.add("active");
+          button.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+
+    /* SCROLL REVEAL */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach(element => observer.observe(element));
+
+    } else {
+      revealElements.forEach(element => element.classList.add("visible"));
+    }
+
+    /* IMAGE FALLBACK */
+
+    document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("error", () => {
+        img.style.display = "none";
+        const parent = img.parentElement;
+        if (parent) {
+          parent.style.backgroundColor = "#D8D5CF";
+        }
+      }, { once: true });
+    });
+  </script>
+
+</body>
+</html>
